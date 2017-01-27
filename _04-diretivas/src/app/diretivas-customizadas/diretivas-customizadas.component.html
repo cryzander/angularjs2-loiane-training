@@ -1,3 +1,9 @@
+<!--
+  Este arquivo contém todas as diretivas customizadas.
+  Algumas diretivas estão em shared pois são compartilhadas para
+  toda a aplicação.
+-->
+
 <p fundoAmarelo >
   Texto com fundo amarelo.
 </p>
@@ -8,6 +14,9 @@
   Texto com highlight quando passo o mouse.
 </p>
 
+<!--
+  highlight dentro de shared
+-->
 <p [highlight]="'red'" [defaultColor]="'grey'">
   Texto com highlight com cores customizadas.
 </p>
@@ -17,6 +26,10 @@
 <div *ngIf="mostrarCursos" >
   Lista de cursos aqui.
 </div>
+
+<!--
+  Posso usar o ngElse (criado) com * ou não
+-->
 <div *ngElse="mostrarCursos" >
   Não existem cursos para serem listados.
 </div>
